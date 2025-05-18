@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PVR Co-living & Guestin</title>
+
+  <!-- PWA manifest and theme color here -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#001f4d" />
+
+  <!-- Your other head tags (styles, etc.) -->
+</head>
+<body>
+
+  <!-- Your page content -->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(err => console.log('Service Worker Registration Failed:', err));
+    }
+  </script>
+</body>
+</html>
