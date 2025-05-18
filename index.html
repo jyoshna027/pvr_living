@@ -4,23 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PVR Co-living & Guestin</title>
-
-  <!-- PWA manifest and theme color here -->
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#001f4d" />
-
-  <!-- Your other head tags (styles, etc.) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <img src="images/logo.jpg" alt="PVR Logo" />
+    <h1>PVR Co-living & Guestin</h1>
+  </header>
 
-  <!-- Your page content -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#features">Key Features</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then(() => console.log('Service Worker Registered'))
-        .catch(err => console.log('Service Worker Registration Failed:', err));
-    }
-  </script>
+  <div class="hero">
+    Comfortable | Affordable | Community-Driven
+  </div>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p><strong>🏠 Welcome to PVR Co-living & Guestin – Your Home Away from Home!</strong></p>
+      <p>Located in Gachibowli, Hyderabad, PVR Co-living & Guestin caters to students, professionals, digital nomads, and short-term travelers. We provide modern, affordable, community-based living with all essential amenities.</p>
+      <h3>⭐ Why Choose Us?</h3>
+      <ul>
+        <li>✅ Prime Location</li>
+        <li>✅ Fully Furnished Rooms</li>
+        <li>✅ High-Speed WiFi</li>
+        <li>✅ Housekeeping Services</li>
+        <li>✅ 24/7 Security</li>
+        <li>✅ Workspaces & Lounges</li>
+        <li>✅ Flexible Stay Options</li>
+        <li>✅ Affordable Pricing</li>
+        <li>✅ Friendly Staff & Support</li>
+      </ul>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>🔹 Short-term stays</li>
+        <li>🔹 Long-term co-living</li>
+        <li>🔹 Private & shared rooms</li>
+        <li>🔹 Daily/weekly housekeeping</li>
+        <li>🔹 24/7 Security and Support</li>
+        <li>🔹 High-Speed Internet</li>
+        <li>🔹 Community Events & Networking</li>
+        <li>🔹 Shared Amenities</li>
+        <li>🔹 Flexible Payment Options</li>
+      </ul>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <div class="features-grid">
+        <div>
+          <img src="images/wifi.png" alt="WiFi" />
+          <h3>High-Speed WiFi</h3>
+          <p>Fast internet for all your devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Address:</strong> Gachibowli, Hyderabad, Telangana, India - 500032</p>
+      <p><strong>Phone:</strong> 9492179094</p>
+      <p><strong>Email:</strong> <a href="mailto:pvrcoliving@gmail.com">pvrcoliving@gmail.com</a></p>
+      <p><strong>Location on Google Maps:</strong> <a href="https://maps.app.goo.gl/4W55cKCdUxFcGQMt7" target="_blank" class="map-link">Open in Google Maps</a></p>
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/4W55cKCdUxFcGQMt7" alt="QR Code for Google Maps Location" />
+        <div class="qr-caption">Scan for Directions</div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 PVR Co-living & Guestin. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

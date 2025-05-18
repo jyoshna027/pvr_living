@@ -1,92 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PVR Co-living & Guestin</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <img src="images/logo.jpg" alt="PVR Logo" />
-    <h1>PVR Co-living & Guestin</h1>
-  </header>
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Our Services</a>
-    <a href="#features">Key Features</a>
-    <a href="#contact">Contact Us</a>
-  </nav>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <div class="hero">
-    Comfortable | Affordable | Community-Driven
-  </div>
+header {
+  background-color: #001f4d;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
 
-  <div class="container">
-    <section id="about">
-      <h2>About Us</h2>
-      <p><strong>🏠 Welcome to PVR Co-living & Guestin – Your Home Away from Home!</strong></p>
-      <p>Located in Gachibowli, Hyderabad, PVR Co-living & Guestin caters to students, professionals, digital nomads, and short-term travelers. We provide modern, affordable, community-based living with all essential amenities.</p>
-      <h3>⭐ Why Choose Us?</h3>
-      <ul>
-        <li>✅ Prime Location</li>
-        <li>✅ Fully Furnished Rooms</li>
-        <li>✅ High-Speed WiFi</li>
-        <li>✅ Housekeeping Services</li>
-        <li>✅ 24/7 Security</li>
-        <li>✅ Workspaces & Lounges</li>
-        <li>✅ Flexible Stay Options</li>
-        <li>✅ Affordable Pricing</li>
-        <li>✅ Friendly Staff & Support</li>
-      </ul>
-    </section>
+header img {
+  width: 80px;
+  display: block;
+  margin: 0 auto 10px;
+}
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>🔹 Short-term stays</li>
-        <li>🔹 Long-term co-living</li>
-        <li>🔹 Private & shared rooms</li>
-        <li>🔹 Daily/weekly housekeeping</li>
-        <li>🔹 24/7 Security and Support</li>
-        <li>🔹 High-Speed Internet</li>
-        <li>🔹 Community Events & Networking</li>
-        <li>🔹 Shared Amenities</li>
-        <li>🔹 Flexible Payment Options</li>
-      </ul>
-    </section>
+nav {
+  background: #004080;
+  text-align: center;
+  padding: 10px 0;
+}
 
-    <section id="features">
-      <h2>Key Features</h2>
-      <div class="features-grid">
-        <!-- Add icons and descriptions similarly -->
-        <div>
-          <img src="images/wifi.png" alt="WiFi" />
-          <h3>High-Speed WiFi</h3>
-          <p>Fast internet for all your devices.</p>
-        </div>
-        <!-- Add more features here as needed -->
-      </div>
-    </section>
+nav a {
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
 
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p><strong>Address:</strong> Gachibowli, Hyderabad, Telangana, India - 500032</p>
-      <p><strong>Phone:</strong> 9492179094</p>
-      <p><strong>Email:</strong> <a href="mailto:pvrcoliving@gmail.com">pvrcoliving@gmail.com</a></p>
-      <p><strong>Location on Google Maps:</strong> <a href="https://maps.app.goo.gl/4W55cKCdUxFcGQMt7" target="_blank" class="map-link">Open in Google Maps</a></p>
-      <div class="qr-code">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/4W55cKCdUxFcGQMt7" alt="QR Code for Google Maps Location" />
-        <div class="qr-caption">Scan for Directions</div>
-      </div>
-    </section>
-  </div>
+nav a:hover {
+  text-decoration: underline;
+}
 
-  <footer>
-    <p>&copy; 2025 PVR Co-living & Guestin. All Rights Reserved.</p>
-  </footer>
+.hero {
+  background: #cce0ff;
+  padding: 40px 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #001f4d;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #001f4d;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.features-grid {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.features-grid div {
+  background: #e6f0ff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+}
+
+.features-grid img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.map-link {
+  color: #004080;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+.qr-code {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.qr-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+footer {
+  background: #001f4d;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
